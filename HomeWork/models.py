@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Teacher(models.Model):
-    id_no = models.CharField(primary_key=True)
+    id_no = models.CharField(primary_key=True,max_length=50)
     name=models.CharField(max_length=100)
     email=models.EmailField(unique=True)
     phone_number=models.CharField(max_length=15,blank=True)
